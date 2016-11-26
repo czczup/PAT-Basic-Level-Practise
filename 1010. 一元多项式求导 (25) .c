@@ -21,10 +21,7 @@
 #include <stdio.h>
 int main()
 {
-	int num[1000],n,cnt=0;
-	for(n=0;n<1000;n++){
-		num[n]=-1;
-	}
+	int num[1000]={0},n,cnt=0;
 	for(n=0;n<1000;n++) {
 		scanf("%d",&num[n]);
   		if(getchar()=='\n'){
