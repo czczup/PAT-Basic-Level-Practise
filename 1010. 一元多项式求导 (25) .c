@@ -18,7 +18,6 @@
 12 3 -10 1 6 0
 */
 
-
 #include <stdio.h>
 int main()
 {
@@ -33,18 +32,16 @@ int main()
     	}
 	}
 	for(n=0;n<999;n+=2){
-		if(n!=0){
-      			printf(" ");
-    		}  
-		if(num[n]!=num[n+1] num[n]*num[n+1]!=0){
-			num[n]*=num[n+1];
-			num[n+1]--;
-			printf("%d %d",num[n],num[n+1]);
+		if(num[n]!=num[n+1]&num[n]*num[n+1]!=0){
+			if(n!=0){
+				printf(" ");
+			}
+			printf("%d %d",num[n]*num[n+1],num[n+1]-1);
    		}
-		else if(num[n]*num[n+1]==0){
+		else if(num[1]==0){
    			printf("0 0");
+   			break;
 		}
-    
 	}
 }
 
