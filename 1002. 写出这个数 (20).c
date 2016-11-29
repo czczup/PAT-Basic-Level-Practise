@@ -66,6 +66,6 @@ int numcheck(int i)
 		case 7:printf("qi");break; 
 		case 8:printf("ba");break; 
 		case 9:printf("jiu");break; 
-	}
+	} 
 
 }
