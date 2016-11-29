@@ -59,3 +59,4 @@ void numcheck(int i)
 		case 9:printf("jiu");break; 
 	}
 }
+ 
