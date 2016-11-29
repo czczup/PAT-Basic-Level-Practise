@@ -97,3 +97,4 @@ int min(int a,int b)
 	a<b?(minnum=a):(minnum=b);
 	return minnum; 
 }//取最小值 
+ 
