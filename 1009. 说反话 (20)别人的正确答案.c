@@ -39,5 +39,5 @@ int main()
 		printf("%c", *s);
 	}
 	
-}
+} 
 
