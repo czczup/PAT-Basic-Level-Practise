@@ -55,3 +55,4 @@ int Fprint(int n,int num[])
 		 		}break;
 	}
 }
+ 
