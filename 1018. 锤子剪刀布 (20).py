@@ -1,3 +1,4 @@
+#1018. 锤子剪刀布(20)
 import sys
 cnt = int(input())#读入数据量
 #胜平输BCJ
