@@ -1,4 +1,4 @@
-#1019.数字黑洞 (20)
+#1019. 数字黑洞 (20)
 num = int(input())
 result = -1
 while result!=6174:
