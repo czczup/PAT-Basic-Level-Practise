@@ -1,4 +1,4 @@
-﻿/*1027. 打印沙漏 (20)*/
+/*1027. 打印沙漏 (20)*/
 #include <stdio.h>
 #include <math.h>
 int num_in(int layer);
@@ -34,4 +34,3 @@ void draw(int cnt,int layer,char ch){
         printf("%c",ch);
     printf("\n");
 }/*绘制符号*/
-
