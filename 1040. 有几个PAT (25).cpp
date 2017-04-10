@@ -1,4 +1,4 @@
-﻿/*1040. 有几个PAT (25)*/
+/*1040. 有几个PAT (25)*/
 #include <stdio.h>
 #include <string.h>
 int main()
