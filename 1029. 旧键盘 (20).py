@@ -11,4 +11,3 @@ for i in range(0,len(charlist)):
         if charlist[i] not in char:
             char.append(charlist[i])
             print(charlist[i],end='')
-
