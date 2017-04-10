@@ -22,7 +22,6 @@ def assign(temp,num,x,y,m,n,cnt,N):
 		pass
 
 
-
 def main():
 	N = eval(input(""))
 	min,m,n = N,0,0
