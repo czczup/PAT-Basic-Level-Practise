@@ -65,6 +65,3 @@ for i in range(0,n):
             print("NO")
     else:
         print("NO")
-    
-                    
-    
