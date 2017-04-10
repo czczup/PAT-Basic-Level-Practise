@@ -33,5 +33,3 @@ if listnum[0]=='+':
     listnum.pop(0)
 str = ('').join(listnum)
 print(str)
-
- 
