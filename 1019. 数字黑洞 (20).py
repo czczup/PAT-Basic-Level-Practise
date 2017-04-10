@@ -16,4 +16,3 @@ while result!=6174:
     #相等只输出一次
     if result == 0:
         break
-    
