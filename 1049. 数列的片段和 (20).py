@@ -17,4 +17,4 @@ sumlst = 0 #数字总和
 for i in range(N):
 	sumlst += eval(lst[i])*(N-i)*(i+1) #根据数字的出现规律求和
 print("%.2f" % sumlst)
-#还是超时
+#还是超时 
