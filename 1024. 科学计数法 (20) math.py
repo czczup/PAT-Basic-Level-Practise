@@ -1,4 +1,4 @@
-#1024. 科学计数法 (20)
+#1024. 科学计数法 (20) 
 import re
 str1 = input()
 num1 = re.findall(r".\d+\.?\d*",str1)
@@ -18,4 +18,3 @@ else:
         lenstr = 0
 num = eval(num1[0])*(10**int(num1[1]))
 print("%.*f"%(lenstr,num))
-
