@@ -1,4 +1,4 @@
-﻿/*1043. 输出PATest (20)*/
+/*1043. 输出PATest (20)*/
 #include <stdio.h>
 #include <string.h>
 int main()
