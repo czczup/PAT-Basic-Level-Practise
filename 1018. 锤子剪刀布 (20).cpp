@@ -41,4 +41,3 @@ int main()
     char idnum[3]={'B','C','J'};
     printf("%c %c",idnum[id1-3],idnum[id2-3]);
 }
-
