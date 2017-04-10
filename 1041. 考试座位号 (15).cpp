@@ -1,4 +1,4 @@
-﻿/*1041. 考试座位号 (15)*/
+/*1041. 考试座位号 (15)*/
 #include <stdio.h>
 typedef struct student{
 	char id[15];
@@ -26,4 +26,3 @@ int main()
 			}
 	}
 }
-
