@@ -27,5 +27,3 @@ for i in range(0,N):
 				print(numhigh.index(lst[0])*13+13)
 		if len(lst)==2:#两串字母
 			print((numhigh.index(lst[0])+1)*13+numlow.index(lst[1]))
-
-
