@@ -1,4 +1,4 @@
-﻿/*1042. 字符统计 (20)*/
+/*1042. 字符统计 (20)*/
 #include <stdio.h>
 #include <string.h>
 int main()
