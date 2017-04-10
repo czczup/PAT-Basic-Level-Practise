@@ -1,4 +1,4 @@
-﻿/*1024. 科学计数法 (20)*/
+/*1024. 科学计数法 (20)*/
 #include <stdio.h> 
 #include <string.h>
 void pop(char* listnum,int pos);
