@@ -37,6 +37,3 @@ for i in range(0,len(finalnum)):
     if i!=len(finalnum)-1:
         print(' ',end='')
         #最后一个数字后不输出空格
-    
-
-        
