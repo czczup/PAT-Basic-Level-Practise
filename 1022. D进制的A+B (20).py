@@ -15,3 +15,4 @@ number.reverse()
 #翻转
 for i in range(0,len(number)):
     print(int(number[i]),end='')
+ 
