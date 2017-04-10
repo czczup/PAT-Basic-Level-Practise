@@ -37,3 +37,4 @@ for i in range(0,N):
     if sumofcake == D:
         break
 print("%.2f"%moneynum)
+  
