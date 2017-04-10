@@ -16,6 +16,5 @@ int main()
 	s = abs((charge / 29) % 17);
 	g = (charge / 29) / 17;
 	printf("%d.%d.%d",g,s,k);
-	
 }
 
