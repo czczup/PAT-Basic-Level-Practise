@@ -19,4 +19,3 @@ int main() {
 	else//有珠子没买到
 		printf("No %d",lenbuy - cnt);
 }
-
