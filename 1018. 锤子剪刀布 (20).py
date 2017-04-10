@@ -33,3 +33,4 @@ print(A[0],A[1],A[2])
 print(B[0],B[1],B[2])
 idnum = ['B','C','J']#按字母排序
 print(idnum[id1-3],idnum[id2-3])
+ 
