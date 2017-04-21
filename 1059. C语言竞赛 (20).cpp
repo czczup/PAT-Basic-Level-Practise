@@ -23,7 +23,7 @@ int main() {
 		for(j=0; j<N; j++){
 			if(ID == students[j]){
 				if(flag[j]==0) //未领过奖的 
-					if(j==0 )//冠军 
+					if(j==0) //冠军 
 						printf("%04d: Mystery Award\n",ID);
 					else if(isprime(j+1)) //排名是素数 
 						printf("%04d: Minion\n",ID);
