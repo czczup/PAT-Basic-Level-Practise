@@ -52,8 +52,6 @@ int main()
 		}
 		if(false_amount[i]==max)
 			printf(" %d",i+1);
-	}
-		
-	
+	}	
 }
 
