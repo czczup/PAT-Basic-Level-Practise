@@ -13,26 +13,24 @@ def isturenum(num):
     else:
         return 0
 
-def main():
-    n = eval(input(""))
-    num = input("").split(' ')
-    amount,sum = 0,0
 
-    for i in range(n):
-        if isturenum(num[i]):
-            amount += 1
-            sum += eval(num[i])
-        else:
-            print("ERROR: %s is not a legal number"%num[i])
-    try:
-        sum /= amount
-        if amount==1:
-            print("The average of 1 number is %.2f"%sum)
-        else:
-            print("The average of %d numbers is %.2f"%(amount,sum))
-    except:
-        print("The average of %d numbers is Undefined"%amount)
+n = int(input())
+num = input().split(' ')
+amount,sum = 0,0
+for i in range(n):
+    if isturenum(num[i]):
+        amount += 1
+        sum += eval(num[i])
+    else:
+        print("ERROR: %s is not a legal number"%num[i])
+try:
+    sum /= amount
+    if amount==1:
+        print("The average of 1 number is %.2f"%sum)
+    else:
+        print("The average of %d numbers is %.2f"%(amount,sum))
+except:
+    print("The average of %d numbers is Undefined"%amount)
 
-if __name__ == '__main__':
-    main()
+
 #允许‘.’作为字符串最后一位，否则最后一个测试点通不过
