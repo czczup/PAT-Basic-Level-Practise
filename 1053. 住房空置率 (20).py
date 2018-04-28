@@ -1,6 +1,6 @@
 #不空置 0 可能空置 1 空置 2
 #N,e,D = [eval(item) for item in input("").split(' ')]
-N,e,D = input("").split(' ')
+N,e,D = input().split(' ')
 N,D = eval(N),eval(D)
 amount = [0,0,0] # [不空置,可能空置,空置]
 for i in range(N):
