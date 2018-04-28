@@ -1,5 +1,4 @@
-﻿/*1039. 到底买不买 (20)*/
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 int main() {
 	char pearl[1000],buy[1000];
