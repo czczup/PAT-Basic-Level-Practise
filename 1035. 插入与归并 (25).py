@@ -1,56 +1,27 @@
-def insertionSort(alist,blist,clist):
-    for index in range(1,len(alist)):
-        currentvalue = alist[index]
-        position = index
-        while position>0 and alist[position-1]>currentvalue:
-            alist[position]=alist[position-1]
-            position = position-1
-        alist[position]=currentvalue
-        if alist==blist:
-            clist[0] = 1
-        if clist == [1] and alist!=blist:
+def check(lst1,lst2):
+    flag = 0
+    for i in range(len(lst2)-1):
+        if lst2[i] > lst2[i+1]:
+            flag = i + 1
             break
+    if lst1[flag:] == lst2[flag:]: # 插入排序
+        result = sorted(lst1[:flag+1])+lst2[flag+1:] # 再迭代一轮的结果
+        return True,result
+    else: # 归并排序
+        cnt = 2 # 归并的数量
+        result = lst2
+        while result == lst2: # 不断归并排序直到顺序发送变化
+            sub_lst = [sorted(lst2[i:i+cnt]) for i in range(0,len(lst2),cnt)]
+            result = [num for sub in sub_lst for num in sub]
+            cnt *= 2
+        return False,result
 
-def mergeSort(alist):
-    if len(alist)>1:
-        mid = len(alist)//2
-        lefthalf = alist[:mid]
-        righthalf = alist[mid:]
-        # mergeSort(lefthalf)
-        # mergeSort(righthalf)
-        i,j,k=0,0,0
-        while i < len(lefthalf) and j < len(righthalf):
-            if lefthalf[i] < righthalf[j]:
-                alist[k]=lefthalf[i]
-                i=i+1
-            else:
-                alist[k]=righthalf[j]
-                j=j+1
-            k=k+1
-
-        while i < len(lefthalf):
-            alist[k]=lefthalf[i]
-            i=i+1
-            k=k+1
-
-        while j < len(righthalf):
-            alist[k]=righthalf[j]
-            j=j+1
-            k=k+1
-
-
-if __name__ == '__main__':
-    N = int(input(""))
-    sort_before1 = [int(item) for item in input("").split(" ")]
-    sort_after1 = [int(item) for item in input("").split(" ")]
-    sort_before2 = [item for item in sort_before1]
-    sort_after2 = [item for item in sort_after1]
-    flag = [0]
-    insertionSort(sort_before1,sort_after1,flag)
-    if flag[0] == 1:
-        print("Insertion Sort")
-        print(" ".join([str(i) for i in sort_before1]))
-    else:
-        mergeSort(sort_after2,)
-        print("Merge Sort")
-        print(" ".join([str(i) for i in sort_after2]))
+num = int(input())
+lst1 = [int(i) for i in input().split()]
+lst2 = [int(i) for i in input().split()]
+flag,next_list = check(lst1,lst2)
+if flag:
+    print("Insertion Sort")
+else:
+    print("Merge Sort")
+print(" ".join([str(i) for i in next_list]))
