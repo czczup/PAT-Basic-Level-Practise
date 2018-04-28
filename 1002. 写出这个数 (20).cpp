@@ -1,7 +1,6 @@
 #include <stdio.h>
 int numcheck(int i);
-int main()
-{
+int main(){
 	unsigned long long a,b=0;
 	int cnt,n=0;
 	scanf("%lld",&a);
