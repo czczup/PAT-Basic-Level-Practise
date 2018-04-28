@@ -1,10 +1,8 @@
-﻿/*1018. 锤子剪刀布 (20)*/
-#include <stdio.h> 
-int main()
-{
+﻿#include <stdio.h>
+int main(){
     int cnt,i;
     scanf("%d",&cnt);
-    int A[6]={0},B[6]={0};
+    int A[6]={0},B[6]={0}; //胜平负BCJ
     for(i=0;i<cnt;i++){
         char a,b;
         getchar();
@@ -24,16 +22,16 @@ int main()
         if (b == a)
             A[1]++;
     }
-    A[0] = A[3]+A[4]+A[5];
-    B[0] = B[3]+B[4]+B[5];
+    A[0] = A[3] + A[4] + A[5];
+    B[0] = B[3] + B[4] + B[5];
     B[1] = A[1];
     A[2] = B[0];
     B[2] = A[0];
     int id1 = 3,id2 = 3;
     for(cnt=4;cnt<6;cnt++){
-        if(A[cnt]>A[id1])
+        if(A[cnt] > A[id1])
             id1 = cnt;
-        if(B[cnt]>B[id2])
+        if(B[cnt] > B[id2])
             id2 = cnt;
     }
     printf("%d %d %d\n",A[0],A[1],A[2]);
