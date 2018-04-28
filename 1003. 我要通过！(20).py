@@ -1,6 +1,5 @@
-#1003. 我要通过！(20)
 n = int(input())
-for i in range(0,n):
+for i in range(n):
     flag = [1,0,0,1,1,1,1,1,0]
     #只有PAT 1 否则 0
     #中间存在PAT 1 否则 0
